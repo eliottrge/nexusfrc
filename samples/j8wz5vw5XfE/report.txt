@@ -1,0 +1,11 @@
+Video ball count vs scorebug (scorebug is exact for the ACTIVE hub only)
+period       blue cnt/scored  red cnt/scored
+AUTO                  88/149         130/174
+TRANSITION             18/17           35/38
+SHIFT 1                29/11     42/35 (off)
+SHIFT 2           16/1 (off)          99/132
+SHIFT 3                63/62       3/8 (off)
+SHIFT 4            5/5 (off)         136/173
+END GAME             111/158         138/130
+last scorebug reading: blue 403  red 690 (the final 3-second scoring window may be missing)
+scorebug quality: {'blue_rejected': 0, 'blue_missing': 10, 'red_rejected': 0, 'red_missing': 1}

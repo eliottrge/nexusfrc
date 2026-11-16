@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>nexusfrc - match ball counter</title>
+<style>
+  :root {
+    color-scheme: light;
+    --page: #f4f3f0; --surface: #fcfcfb; --border: #dddcd7;
+    --text: #0b0b0b; --text2: #52514e; --muted: #86857f;
+    --grid: #e6e5e1; --band: #f1f0ec; --sel: rgba(11, 11, 11, .08);
+    --blue: #2a78d6; --red: #e34948; --err: #b3261e;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      color-scheme: dark;
+      --page: #121211; --surface: #1a1a19; --border: #343330;
+      --text: #f0efec; --text2: #c3c2b7; --muted: #8f8e86;
+      --grid: #2f2e2b; --band: #1f1f1d; --sel: rgba(255, 255, 255, .11);
+      --blue: #3987e5; --red: #e66767; --err: #f2b8b5;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--page); color: var(--text);
+         font: 15px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 1040px; margin: 0 auto; padding: 24px 16px 64px; }
+  h1 { font-size: 20px; margin: 0 0 2px; }
+  h2 { font-size: 15px; margin: 0 0 10px; }
+  .sub { color: var(--text2); margin: 0 0 20px; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
+          padding: 16px; margin-bottom: 16px; }
+  .row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+  input[type=text], input[type=number], select {
+    font: inherit; color: var(--text); background: var(--surface);
+    border: 1px solid var(--border); border-radius: 6px; padding: 7px 10px; }
+  input[type=text].url { flex: 1 1 360px; min-width: 0; }
+  input.teams { width: 190px; }
+  input[type=number] { width: 84px; }
+  button { font: inherit; border-radius: 6px; border: 1px solid var(--border); padding: 7px 14px;
+           background: var(--surface); color: var(--text); cursor: pointer; }
+  button.primary { background: var(--text); color: var(--surface); border-color: var(--text); font-weight: 600; }
+  button:disabled { opacity: .5; cursor: default; }
+  button.chip { padding: 3px 10px; font-size: 13px; border-radius: 999px; }
+  button.chip[aria-pressed=true] { background: var(--text); color: var(--surface); border-color: var(--text); }
+  :focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
+  details > summary { cursor: pointer; color: var(--text2); }
+  .hint { color: var(--text2); font-size: 13px; }
+  .err { color: var(--err); font-weight: 600; margin-top: 10px; }
+  .bar { height: 8px; background: var(--grid); border-radius: 4px; overflow: hidden; margin: 10px 0 6px; }
+  .bar > div { height: 100%; width: 0; background: var(--blue); transition: width .4s; }
+  .legend { display: flex; gap: 18px; flex-wrap: wrap; color: var(--text2); font-size: 13px; margin: 6px 0 4px; }
+  .legend span { display: inline-flex; align-items: center; gap: 6px; }
+  .sw { width: 12px; height: 12px; border-radius: 3px; display: inline-block; }
+  .sw.blue { background: var(--blue); } .sw.red { background: var(--red); }
+  .sw.hatch { background: repeating-linear-gradient(45deg, var(--text2) 0 2px, transparent 2px 4px); }
+  .chartwrap { position: relative; }
+  svg { display: block; width: 100%; height: auto; touch-action: none; user-select: none; }
+  svg text { fill: var(--text2); font-size: 11px; }
+  .tip { position: absolute; pointer-events: none; background: var(--surface); border: 1px solid var(--border);
+         border-radius: 6px; padding: 6px 9px; font-size: 12px; white-space: nowrap; display: none;
+         box-shadow: 0 2px 8px rgba(0, 0, 0, .18); z-index: 2; }
+  .tip b { font-weight: 600; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; margin-top: 14px; }
+  .res { border: 1px solid var(--border); border-radius: 8px; padding: 12px 14px; }
+  .res .who { display: flex; align-items: center; gap: 8px; font-weight: 600; }
+  .res .big { font-size: 40px; font-weight: 700; line-height: 1.1; margin: 4px 0; font-variant-numeric: tabular-nums; }
+  .res .big small { font-size: 14px; font-weight: 400; color: var(--text2); }
+  .res dl { margin: 6px 0 0; display: grid; grid-template-columns: auto 1fr; gap: 2px 12px; font-size: 13px; color: var(--text2); }
+  .res dd { margin: 0; text-align: right; color: var(--text); font-variant-numeric: tabular-nums; }
+  .note { font-size: 12.5px; color: var(--text2); margin-top: 8px; }
+  .tablewrap { max-height: 320px; overflow: auto; margin-top: 8px; }
+  table { border-collapse: collapse; width: 100%; font-size: 13px; font-variant-numeric: tabular-nums; }
+  th, td { padding: 3px 8px; text-align: right; border-bottom: 1px solid var(--grid); }
+  th:first-child, td:first-child, th:nth-child(2), td:nth-child(2) { text-align: left; }
+  th { position: sticky; top: 0; background: var(--surface); }
+  [hidden] { display: none !important; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Match ball counter</h1>
+  <p class="sub">Paste a YouTube link of a full match, then pick any two times on the timeline to see how many balls each alliance scored between them.</p>
+
+  <section class="card" aria-label="Analyze a match">
+    <form id="form" class="row">
+      <input id="url" class="url" type="text" placeholder="https://www.youtube.com/watch?v=..." aria-label="YouTube link" autocomplete="off">
+      <button id="go" class="primary" type="submit">Analyze</button>
+    </form>
+    <details style="margin-top:10px">
+      <summary>Team numbers (optional)</summary>
+      <div class="row" style="margin-top:8px">
+        <input id="blue" class="teams" type="text" placeholder="Blue: 868 2046 2910" aria-label="Blue alliance team numbers">
+        <input id="red" class="teams" type="text" placeholder="Red: 4065 4414 1323" aria-label="Red alliance team numbers">
+      </div>
+    </details>
+    <div id="job" hidden>
+      <div class="bar" role="progressbar" aria-label="Analysis progress"><div id="bar"></div></div>
+      <div id="stage" class="hint"></div>
+    </div>
+    <div id="error" class="err" role="alert" hidden></div>
+    <div id="oldwrap" class="row" style="margin-top:12px" hidden>
+      <label class="hint" for="old">Already analyzed:</label>
+      <select id="old"></select>
+    </div>
+  </section>
+
+  <section id="result" hidden>
+    <div class="card">
+      <h2 id="title"></h2>
+      <div id="meta" class="hint"></div>
+
+      <div class="legend" aria-label="Legend">
+        <span><i class="sw blue"></i>Blue alliance (bars up)</span>
+        <span><i class="sw red"></i>Red alliance (bars down)</span>
+        <span><i class="sw hatch"></i>Hatched: hub inactive or END GAME, so estimated from the video count</span>
+      </div>
+      <div class="chartwrap" id="wrap">
+        <svg id="chart" viewBox="0 0 960 360" role="img" aria-label="Balls per second for each alliance across the match. Drag to select a time range."></svg>
+        <div class="tip" id="tip"></div>
+      </div>
+      <p class="hint" style="margin:2px 0 10px">Drag across the chart to choose a time range, or type the times below. Times are seconds since the start of AUTO.</p>
+
+      <div class="row" id="chips" aria-label="Quick ranges"></div>
+      <div class="row" style="margin-top:12px">
+        <label>From <input id="from" type="number" min="0" step="1"> s</label>
+        <label>To <input id="to" type="number" min="1" step="1"> s</label>
+        <span id="range" class="hint"></span>
+      </div>
+
+      <div id="cards" class="cards" aria-live="polite"></div>
+      <p id="note" class="note"></p>
+
+      <details style="margin-top:14px">
+        <summary>Table view of the selected seconds</summary>
+        <div class="tablewrap"><table id="table"></table></div>
+      </details>
+    </div>
+  </section>
+</main>
+
+<script>
+const $ = s => document.querySelector(s);
+const esc = s => String(s).replace(/[&<>"']/g, c => ({'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'}[c]));
+const mmss = t => Math.floor(t / 60) + ':' + String(t % 60).padStart(2, '0');
+const json = async r => {
+  const body = await r.json().catch(() => ({}));
+  if (!r.ok) throw new Error(body.detail || ('Request failed (' + r.status + ')'));
+  return body;
+};
+const teams = s => (s.match(/\d+/g) || []).map(Number);
+
+// ---- chart geometry (SVG user units) ----
+const W = 960, L = 44, R = 12, TOP = 26, PH = 150, MID = TOP + PH, BOT = MID + PH;
+let match = null, N = 0, step = 1, ymax = 1;
+let sel = {a: 0, b: 0}, drag = null, seq = 0, timer = null;
+const xs = t => L + t * step;
+
+function niceMax(v) {
+  const p = Math.pow(10, Math.floor(Math.log10(Math.max(v, 1))));
+  for (const m of [1, 2, 5, 10]) if (v <= m * p) return m * p;
+  return 10 * p;
+}
+
+// bar with a square foot on the baseline and a rounded far end
+function barPath(x, w, h, up) {
+  const r = Math.min(4, w / 2, h), y = up ? MID - h : MID + h;
+  return up
+    ? `M${x},${MID}V${y + r}Q${x},${y} ${x + r},${y}H${x + w - r}Q${x + w},${y} ${x + w},${y + r}V${MID}Z`
+    : `M${x},${MID}V${y - r}Q${x},${y} ${x + r},${y}H${x + w - r}Q${x + w},${y} ${x + w},${y - r}V${MID}Z`;
+}
+
+function periods() {
+  const out = [];
+  for (const s of match.seconds) {
+    const last = out[out.length - 1];
+    if (last && last.name === s.period) last.b = s.t + 1;
+    else out.push({name: s.period, a: s.t, b: s.t + 1});
+  }
+  return out;
+}
+
+function drawChart() {
+  const secs = match.seconds;
+  N = secs.length;
+  step = (W - L - R) / N;
+  ymax = niceMax(Math.max(1, ...secs.map(s => Math.max(s.blue.estimate, s.red.estimate))));
+  const per = periods();
+  let g = `<defs>` + ['blue', 'red'].map(c =>
+    `<pattern id="h-${c}" patternUnits="userSpaceOnUse" width="5" height="5" patternTransform="rotate(45)">` +
+    `<rect width="2.5" height="5" style="fill:var(--${c})"/></pattern>`).join('') + `</defs>`;
+
+  per.forEach((p, i) => {
+    if (i % 2 === 0) g += `<rect x="${xs(p.a)}" y="${TOP}" width="${(p.b - p.a) * step}" height="${2 * PH}" style="fill:var(--band)"/>`;
+    g += `<text x="${xs((p.a + p.b) / 2)}" y="${TOP - 9}" text-anchor="middle">${esc(p.name === 'TRANSITION' ? 'TRANS.' : p.name)}</text>`;
+  });
+  for (const f of [0.5, 1]) for (const dir of [-1, 1]) {
+    const y = MID + dir * f * PH;
+    g += `<line x1="${L}" x2="${W - R}" y1="${y}" y2="${y}" style="stroke:var(--grid)"/>` +
+         `<text x="${L - 6}" y="${y + 4}" text-anchor="end">${+(f * ymax).toFixed(1)}</text>`;
+  }
+  g += `<text x="${L - 6}" y="${MID + 4}" text-anchor="end">0</text>`;
+  for (const s of secs) for (const c of ['blue', 'red']) {
+    const v = s[c].estimate, h = v / ymax * PH;
+    if (h < 0.5) continue;
+    const w = Math.max(1, step - 2);
+    g += `<path d="${barPath(xs(s.t) + (step - w) / 2, w, h, c === 'blue')}" ` +
+         `style="fill:${s[c].trusted ? `var(--${c})` : `url(#h-${c})`}"/>`;
+  }
+  g += `<line x1="${L}" x2="${W - R}" y1="${MID}" y2="${MID}" style="stroke:var(--muted)"/>`;
+  for (let t = 0; t <= N; t += 10)
+    g += `<text x="${xs(t)}" y="${BOT + 18}" text-anchor="middle">${mmss(t)}</text>`;
+  g += `<g id="selg"><rect id="dimL" y="${TOP}" height="${2 * PH}" style="fill:var(--sel)"/>` +
+       `<rect id="dimR" y="${TOP}" height="${2 * PH}" style="fill:var(--sel)"/>` +
+       `<line id="sel1" y1="${TOP}" y2="${BOT}" style="stroke:var(--text);stroke-width:1.5"/>` +
+       `<line id="sel2" y1="${TOP}" y2="${BOT}" style="stroke:var(--text);stroke-width:1.5"/></g>`;
+  g += `<rect id="hit" x="${L}" y="${TOP}" width="${W - L - R}" height="${2 * PH}" fill="transparent" style="cursor:crosshair"/>`;
+  $('#chart').innerHTML = g;
+  $('#hit').addEventListener('pointerdown', onDown);
+  $('#hit').addEventListener('pointermove', onMove);
+  $('#hit').addEventListener('pointerup', onUp);
+  $('#hit').addEventListener('pointerleave', () => { $('#tip').style.display = 'none'; });
+  drawSelection();
+}
+
+function drawSelection() {
+  const x1 = xs(sel.a), x2 = xs(sel.b);
+  $('#dimL').setAttribute('x', L); $('#dimL').setAttribute('width', Math.max(0, x1 - L));
+  $('#dimR').setAttribute('x', x2); $('#dimR').setAttribute('width', Math.max(0, W - R - x2));
+  $('#sel1').setAttribute('x1', x1); $('#sel1').setAttribute('x2', x1);
+  $('#sel2').setAttribute('x1', x2); $('#sel2').setAttribute('x2', x2);
+  $('#from').value = sel.a; $('#to').value = sel.b;
+  $('#from').max = N - 1; $('#to').max = N;
+  $('#range').textContent = `${mmss(sel.a)} to ${mmss(sel.b)}  (${sel.b - sel.a} s)`;
+  document.querySelectorAll('#chips .chip').forEach(c =>
+    c.setAttribute('aria-pressed', String(+c.dataset.a === sel.a && +c.dataset.b === sel.b)));
+}
+
+function tAt(e) {
+  const r = $('#chart').getBoundingClientRect();
+  const x = (e.clientX - r.left) / r.width * W;
+  return Math.max(0, Math.min(N - 1, Math.floor((x - L) / step)));
+}
+function onDown(e) {
+  drag = tAt(e); sel = {a: drag, b: drag + 1};
+  e.target.setPointerCapture(e.pointerId);
+  drawSelection(); scheduleQuery();
+}
+function onMove(e) {
+  const t = tAt(e);
+  if (drag !== null) {
+    sel = {a: Math.min(drag, t), b: Math.max(drag, t) + 1};
+    drawSelection(); scheduleQuery();
+  }
+  const s = match.seconds[t], tip = $('#tip'), wr = $('#wrap').getBoundingClientRect();
+  const line = (name, c) => `${name} <b>${Math.round(c.estimate)}</b> (scorebug ${c.scored}, video ${c.counted}${c.trusted ? '' : ', hub off / END GAME'})`;
+  tip.innerHTML = `<b>${mmss(t)}</b> &middot; ${esc(s.period)}<br>${line('Blue', s.blue)}<br>${line('Red', s.red)}`;
+  tip.style.display = 'block';
+  const left = e.clientX - wr.left + 14;
+  tip.style.left = Math.min(left, wr.width - tip.offsetWidth - 4) + 'px';
+  tip.style.top = Math.max(0, e.clientY - wr.top - 70) + 'px';
+}
+function onUp() { drag = null; runQuery(); }
+
+function setRange(a, b) {
+  a = Math.max(0, Math.min(N - 1, Math.round(a)));
+  b = Math.max(a + 1, Math.min(N, Math.round(b)));
+  sel = {a, b}; drawSelection(); runQuery();
+}
+$('#from').addEventListener('change', () => setRange(+$('#from').value, sel.b));
+$('#to').addEventListener('change', () => setRange(sel.a, +$('#to').value));
+
+// ---- numbers for the selected range (computed by the server: frcsim/query.py) ----
+function scheduleQuery() { if (!timer) timer = setTimeout(() => { timer = null; runQuery(); }, 90); }
+
+async function runQuery() {
+  const my = ++seq;
+  const r = await json(await fetch(`/api/matches/${match.id}/count?start=${sel.a}&end=${sel.b}`)).catch(() => null);
+  if (!r || my !== seq) return;
+  $('#cards').innerHTML = ['blue', 'red'].map(c => {
+    const x = r[c];
+    return `<div class="res"><div class="who"><i class="sw ${c}"></i>${c === 'blue' ? 'Blue' : 'Red'} alliance</div>` +
+      `<div class="big">${x.estimate} <small>balls (estimate)</small></div><dl>` +
+      `<dt>Scorebug points</dt><dd>${x.scored}</dd>` +
+      `<dt>Counted on video</dt><dd>${x.counted}</dd>` +
+      `<dt>Hub active</dt><dd>${x.active_seconds} of ${x.seconds} s</dd>` +
+      `<dt>Seconds estimated from video</dt><dd>${x.video_only_seconds}</dd></dl></div>`;
+  }).join('');
+  const vo = Math.max(r.blue.video_only_seconds, r.red.video_only_seconds);
+  $('#note').textContent = vo
+    ? `While a hub is active the estimate is the scorebug point count (one point per ball). The ${vo} s where a hub is inactive, or END GAME, use the video count x ${r.calibration}, the factor that makes the video count match the scorebug over the rest of this match, so those parts are approximate.`
+    : 'In this range the estimate is the scorebug point count (one point per ball, exact while the hub is active and there are no foul points).';
+  const rows = match.seconds.filter(s => s.t >= r.start && s.t < r.end);
+  $('#table').innerHTML = '<thead><tr><th>Time</th><th>Period</th><th>Blue est.</th><th>Blue scorebug</th><th>Blue video</th>' +
+    '<th>Red est.</th><th>Red scorebug</th><th>Red video</th></tr></thead><tbody>' +
+    rows.map(s => `<tr><td>${mmss(s.t)}</td><td>${esc(s.period)}</td>` +
+      ['blue', 'red'].map(c => `<td>${s[c].estimate.toFixed(1)}</td><td>${s[c].scored}</td><td>${s[c].counted}</td>`).join('') +
+      '</tr>').join('') + '</tbody>';
+}
+
+// ---- loading a match ----
+async function openMatch(id) {
+  match = await json(await fetch('/api/matches/' + encodeURIComponent(id)));
+  $('#result').hidden = false;
+  $('#title').textContent = match.match_id || match.id;
+  const t = match.teams || {};
+  const fs = match.final_score || {};
+  $('#meta').textContent =
+    `Final scoreboard: blue ${fs.blue ?? '?'} - red ${fs.red ?? '?'}` +
+    (t.blue && t.blue.length ? `   Blue: ${t.blue.join(', ')}` : '') +
+    (t.red && t.red.length ? `   Red: ${t.red.join(', ')}` : '') +
+    `   (scorebug lags the video by about ${match.lag} s; corrected)`;
+  drawChart();
+  const per = periods();
+  $('#chips').innerHTML = [{name: 'Whole match', a: 0, b: N}, ...per].map(p =>
+    `<button type="button" class="chip" data-a="${p.a}" data-b="${p.b}" aria-pressed="false">${esc(p.name)}</button>`).join('');
+  document.querySelectorAll('#chips .chip').forEach(c => c.addEventListener('click', () => setRange(+c.dataset.a, +c.dataset.b)));
+  sel = {a: 0, b: N};
+  drawSelection(); runQuery();
+  $('#old').value = id;
+}
+
+async function refreshList(open) {
+  const list = await json(await fetch('/api/matches')).catch(() => []);
+  $('#oldwrap').hidden = list.length === 0;
+  $('#old').innerHTML = list.map(m =>
+    `<option value="${esc(m.id)}">${esc(m.match_id || m.id)} (blue ${m.final_score.blue ?? '?'} - red ${m.final_score.red ?? '?'})</option>`).join('');
+  if (open && list.length) await openMatch(open === true ? list[0].id : open);
+}
+$('#old').addEventListener('change', () => openMatch($('#old').value));
+
+// ---- starting an analysis ----
+function showError(msg) { $('#error').hidden = !msg; $('#error').textContent = msg || ''; }
+
+$('#form').addEventListener('submit', async e => {
+  e.preventDefault();
+  showError('');
+  $('#go').disabled = true;
+  try {
+    const job = await json(await fetch('/api/jobs', {
+      method: 'POST', headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({url: $('#url').value, blue: teams($('#blue').value), red: teams($('#red').value)})}));
+    $('#job').hidden = false;
+    await poll(job.id);
+  } catch (err) {
+    showError(err.message);
+    $('#go').disabled = false;
+  }
+});
+
+async function poll(id) {
+  let j;
+  for (;;) {
+    j = await json(await fetch('/api/jobs/' + id));
+    $('#bar').style.width = Math.round(j.progress * 100) + '%';
+    $('#stage').textContent = `${j.title ? j.title + ': ' : ''}${j.stage}... ${j.elapsed}s`;
+    if (j.status === 'error') throw new Error(j.error);
+    if (j.status === 'done') break;
+    await new Promise(r => setTimeout(r, 1000));
+  }
+  $('#job').hidden = true;
+  $('#go').disabled = false;
+  await refreshList(false);
+  await openMatch(j.match);
+}
+
+refreshList(true);
+</script>
+</body>
+</html>

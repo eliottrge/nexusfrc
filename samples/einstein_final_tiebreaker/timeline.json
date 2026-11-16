@@ -1,0 +1,3327 @@
+{
+ "schema_version": 1,
+ "game": "REBUILT-2026",
+ "match_id": "2026 Einstein Final Tiebreaker",
+ "duration": 160.0,
+ "field_length": 16.54,
+ "field_width": 8.07,
+ "teams": {
+  "blue": [
+   868,
+   2046,
+   2910
+  ],
+  "red": [
+   4065,
+   4414,
+   1323
+  ]
+ },
+ "auto_winner": "red",
+ "final_score": {
+  "blue": 403,
+  "red": 690
+ },
+ "frames": [],
+ "events": [
+  {
+   "t": 0.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "blue",
+   "count": 2,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 1.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "blue",
+   "count": 3,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 1.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 1,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 2.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "blue",
+   "count": 3,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 2.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "blue",
+   "count": 2,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 2.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 1,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 2.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 4,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 3.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "blue",
+   "count": 1,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 3.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "blue",
+   "count": 1,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 3.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 3,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 3.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 2,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 4.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "blue",
+   "count": 1,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 4.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "blue",
+   "count": 3,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 4.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 2,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 4.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 1,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 5.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "blue",
+   "count": 3,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 5.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "blue",
+   "count": 9,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 5.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 1,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 5.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 1,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 6.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "blue",
+   "count": 5,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 6.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "blue",
+   "count": 21,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 6.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 1,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 6.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 9,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 7.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "blue",
+   "count": 10,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 7.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "blue",
+   "count": 6,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 7.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 10,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 7.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 7,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 8.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "blue",
+   "count": 7,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 8.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 12,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 8.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 10,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 9.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "blue",
+   "count": 9,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 9.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "blue",
+   "count": 1,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 9.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 15,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 9.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 11,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 10.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "blue",
+   "count": 11,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 10.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "blue",
+   "count": 3,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 10.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 13,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 10.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 8,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 11.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "blue",
+   "count": 11,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 11.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "blue",
+   "count": 2,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 11.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 14,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 11.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 9,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 12.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "blue",
+   "count": 9,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 12.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 12,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 12.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 13,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 13.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "blue",
+   "count": 11,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 13.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "blue",
+   "count": 1,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 13.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 9,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 13.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 12,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 14.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "blue",
+   "count": 6,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 14.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "blue",
+   "count": 4,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 14.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 16,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 14.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 14,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 15.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "blue",
+   "count": 6,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 15.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "blue",
+   "count": 8,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 15.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 13,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 15.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 4,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 16.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "blue",
+   "count": 6,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 16.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "blue",
+   "count": 12,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 16.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 14,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 16.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 5,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 17.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "blue",
+   "count": 10,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 17.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "blue",
+   "count": 2,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 17.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 10,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 17.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 2,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 18.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "blue",
+   "count": 14,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 18.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 14,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 18.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 2,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 19.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "blue",
+   "count": 13,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 19.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 9,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 19.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 3,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 20.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "blue",
+   "count": 13,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 20.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 5,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 20.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 1,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 20.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "blue",
+   "count": 3,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 20.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 3,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 20.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "blue",
+   "count": 1,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 23.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "blue",
+   "count": 1,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 24.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "blue",
+   "count": 3,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 25.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "blue",
+   "count": 4,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 25.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "blue",
+   "count": 2,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 26.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "blue",
+   "count": 2,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 26.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "blue",
+   "count": 2,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 26.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 1,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 26.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 6,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 27.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 7,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 27.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 9,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 28.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "blue",
+   "count": 2,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 28.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "blue",
+   "count": 4,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 28.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 16,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 28.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 9,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 29.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "blue",
+   "count": 5,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 29.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "blue",
+   "count": 1,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 29.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 11,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 29.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 8,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 30.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "blue",
+   "count": 7,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 30.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "blue",
+   "count": 4,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 30.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 14,
+   "hub_active": false,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 30.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 6,
+   "hub_active": false,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 31.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "blue",
+   "count": 2,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 31.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 9,
+   "hub_active": false,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 31.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 6,
+   "hub_active": false,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 32.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "blue",
+   "count": 1,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 32.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "blue",
+   "count": 1,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 32.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 11,
+   "hub_active": false,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 32.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 8,
+   "hub_active": false,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 33.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "blue",
+   "count": 1,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 33.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 1,
+   "hub_active": false,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 33.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 2,
+   "hub_active": false,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 34.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "blue",
+   "count": 1,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 39.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 1,
+   "hub_active": false,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 42.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 1,
+   "hub_active": false,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 43.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "blue",
+   "count": 5,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 44.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "blue",
+   "count": 1,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 44.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 1,
+   "hub_active": false,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 46.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "blue",
+   "count": 6,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 47.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "blue",
+   "count": 1,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 47.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "blue",
+   "count": 2,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 54.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 8,
+   "hub_active": false,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 55.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "blue",
+   "count": 4,
+   "hub_active": false,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 55.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 7,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 55.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 11,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 56.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "blue",
+   "count": 1,
+   "hub_active": false,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 56.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "blue",
+   "count": 1,
+   "hub_active": false,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 56.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 12,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 56.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 10,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 57.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 11,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 57.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 6,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 58.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 16,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 58.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 9,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 59.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 14,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 59.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 3,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 60.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 16,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 60.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 5,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 61.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 5,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 61.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 3,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 62.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 4,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 62.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 2,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 63.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 2,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 63.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 1,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 64.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 1,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 65.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 2,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 66.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 1,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 67.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 1,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 69.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 1,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 74.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 2,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 75.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "blue",
+   "count": 1,
+   "hub_active": false,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 75.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 1,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 75.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 4,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 76.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 9,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 76.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 5,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 77.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 10,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 77.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 9,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 78.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 9,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 78.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 6,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 79.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "blue",
+   "count": 7,
+   "hub_active": false,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 79.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 13,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 79.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 2,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 80.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "blue",
+   "count": 1,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 80.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "blue",
+   "count": 9,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 80.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 6,
+   "hub_active": false,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 80.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 1,
+   "hub_active": false,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 81.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "blue",
+   "count": 10,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 81.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "blue",
+   "count": 11,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 81.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 2,
+   "hub_active": false,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 82.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "blue",
+   "count": 15,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 82.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "blue",
+   "count": 3,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 83.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "blue",
+   "count": 8,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 84.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "blue",
+   "count": 9,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 85.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "blue",
+   "count": 12,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 86.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "blue",
+   "count": 2,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 88.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "blue",
+   "count": 2,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 90.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "blue",
+   "count": 3,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 91.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "blue",
+   "count": 1,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 91.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "blue",
+   "count": 5,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 92.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "blue",
+   "count": 1,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 92.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "blue",
+   "count": 7,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 93.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "blue",
+   "count": 1,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 93.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "blue",
+   "count": 1,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 95.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "blue",
+   "count": 1,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 100.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "blue",
+   "count": 3,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 101.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "blue",
+   "count": 2,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 101.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "blue",
+   "count": 1,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 104.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "blue",
+   "count": 1,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 104.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "blue",
+   "count": 3,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 104.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 1,
+   "hub_active": false,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 105.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "blue",
+   "count": 5,
+   "hub_active": false,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 105.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 10,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 106.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 6,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 106.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 8,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 107.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 11,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 107.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 8,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 108.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 8,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 108.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 6,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 109.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 8,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 109.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 5,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 110.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 5,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 110.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 4,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 111.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 5,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 111.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 12,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 112.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "blue",
+   "count": 5,
+   "hub_active": false,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 112.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 7,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 112.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 7,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 113.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 14,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 113.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 5,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 114.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 9,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 115.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 1,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 115.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 2,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 116.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 2,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 116.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 4,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 117.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 12,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 117.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 4,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 118.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 7,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 119.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 1,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 119.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 2,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 120.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 3,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 120.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 4,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 121.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 10,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 121.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 2,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 121.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 3,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 121.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 3,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 122.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 3,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 122.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 2,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 123.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 3,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 124.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 7,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 124.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 3,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 125.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 8,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 125.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 4,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 126.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 13,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 126.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 5,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 127.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 12,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 127.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 5,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 128.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 10,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 128.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 6,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 129.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 8,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 129.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 5,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 130.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "blue",
+   "count": 6,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 130.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 3,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 130.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 2,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 131.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "blue",
+   "count": 6,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 131.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "blue",
+   "count": 10,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 131.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 5,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 131.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 7,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 132.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "blue",
+   "count": 11,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 132.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "blue",
+   "count": 6,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 132.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 5,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 133.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "blue",
+   "count": 13,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 133.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "blue",
+   "count": 1,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 133.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 1,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 134.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "blue",
+   "count": 6,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 134.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 1,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 134.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 4,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 135.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "blue",
+   "count": 2,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 135.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 3,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 135.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 6,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 136.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "blue",
+   "count": 1,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 136.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "blue",
+   "count": 9,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 136.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 6,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 136.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 3,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 137.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "blue",
+   "count": 11,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 137.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "blue",
+   "count": 6,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 137.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 3,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 138.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "blue",
+   "count": 11,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 139.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "blue",
+   "count": 8,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 140.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "blue",
+   "count": 2,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 141.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "blue",
+   "count": 6,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 142.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "blue",
+   "count": 5,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 142.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "blue",
+   "count": 9,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 143.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "blue",
+   "count": 12,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 143.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "blue",
+   "count": 1,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 144.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "blue",
+   "count": 11,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 144.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "blue",
+   "count": 11,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 144.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 6,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 145.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "blue",
+   "count": 8,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 145.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "blue",
+   "count": 6,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 145.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 5,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 145.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 1,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 146.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "blue",
+   "count": 8,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 146.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 1,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 146.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 9,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 147.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "blue",
+   "count": 1,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 147.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 8,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 147.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 9,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 148.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 6,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 148.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 8,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 149.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 12,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 149.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 8,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 150.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 11,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 150.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 2,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 151.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "blue",
+   "count": 1,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 151.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 2,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 151.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 6,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 152.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "blue",
+   "count": 1,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 152.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 5,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 152.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 6,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 153.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "blue",
+   "count": 1,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 153.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 8,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 153.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 9,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 154.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "blue",
+   "count": 1,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 154.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "blue",
+   "count": 6,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 154.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 7,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 154.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 4,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 155.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "blue",
+   "count": 11,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 155.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "blue",
+   "count": 12,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 155.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 7,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 155.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 2,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 156.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "blue",
+   "count": 14,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 156.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "blue",
+   "count": 1,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 156.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 4,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 156.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 9,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 157.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "blue",
+   "count": 12,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 157.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 8,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 157.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 11,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 158.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "blue",
+   "count": 5,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 158.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "blue",
+   "count": 1,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 158.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 8,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 158.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 9,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 159.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "blue",
+   "count": 1,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 159.0,
+   "kind": "fuel_scored",
+   "team": null,
+   "alliance": "red",
+   "count": 11,
+   "hub_active": true,
+   "source": "scorebug_ocr",
+   "detail": ""
+  },
+  {
+   "t": 159.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 7,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 160.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "blue",
+   "count": 5,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  },
+  {
+   "t": 160.0,
+   "kind": "fuel_entry",
+   "team": null,
+   "alliance": "red",
+   "count": 5,
+   "hub_active": true,
+   "source": "video_counter",
+   "detail": ""
+  }
+ ],
+ "periods": [
+  {
+   "name": "AUTO",
+   "start": 5.0,
+   "end": 28.0,
+   "blue_active": true,
+   "red_active": true,
+   "blue_scored": 149,
+   "red_scored": 174,
+   "blue_counted": 80,
+   "red_counted": 119
+  },
+  {
+   "name": "TRANSITION",
+   "start": 28.0,
+   "end": 41.0,
+   "blue_active": true,
+   "red_active": true,
+   "blue_scored": 17,
+   "red_scored": 38,
+   "blue_counted": 13,
+   "red_counted": 32
+  },
+  {
+   "name": "SHIFT 1",
+   "start": 41.0,
+   "end": 67.0,
+   "blue_active": true,
+   "red_active": false,
+   "blue_scored": 11,
+   "red_scored": 35,
+   "blue_counted": 21,
+   "red_counted": 33
+  },
+  {
+   "name": "SHIFT 2",
+   "start": 67.0,
+   "end": 92.0,
+   "blue_active": false,
+   "red_active": true,
+   "blue_scored": 1,
+   "red_scored": 132,
+   "blue_counted": 13,
+   "red_counted": 81
+  },
+  {
+   "name": "SHIFT 3",
+   "start": 92.0,
+   "end": 117.0,
+   "blue_active": true,
+   "red_active": false,
+   "blue_scored": 62,
+   "red_scored": 8,
+   "blue_counted": 50,
+   "red_counted": 2
+  },
+  {
+   "name": "SHIFT 4",
+   "start": 117.0,
+   "end": 143.0,
+   "blue_active": false,
+   "red_active": true,
+   "blue_scored": 5,
+   "red_scored": 173,
+   "blue_counted": 5,
+   "red_counted": 119
+  },
+  {
+   "name": "END GAME",
+   "start": 143.0,
+   "end": 176.0,
+   "blue_active": true,
+   "red_active": true,
+   "blue_scored": 158,
+   "red_scored": 130,
+   "blue_counted": 101,
+   "red_counted": 133
+  }
+ ]
+}
