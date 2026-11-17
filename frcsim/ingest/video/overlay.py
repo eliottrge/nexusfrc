@@ -53,6 +53,36 @@ def read_frame(img):
     return {"clock": secs, "blue": int(blue) if blue else None, "red": int(red) if red else None}
 
 
+def read_teams(path, times, boxes):
+    """Team numbers per alliance, read from the scorebug at several video times (majority vote).
+
+    boxes: {"blue": (x0, y0, x1, y1), "red": ...} in pixels of a 1920-wide frame (from the layout).
+    Returns {"blue": [n1, n2, n3], "red": [...]} in the order shown on the scorebug, or empty lists.
+    """
+    from collections import Counter
+
+    cap = cv2.VideoCapture(str(path))
+    fps = cap.get(cv2.CAP_PROP_FPS)
+    votes = {a: Counter() for a in boxes}
+    for t in times:
+        cap.set(cv2.CAP_PROP_POS_FRAMES, round(t * fps))
+        ok, img = cap.read()
+        if not ok:
+            continue
+        k = img.shape[1] / 1920
+        for a, box in boxes.items():
+            x0, y0, x1, y1 = (int(v * k) for v in box)
+            crop = cv2.resize(img[y0:y1, x0:x1], None, fx=3, fy=3, interpolation=cv2.INTER_CUBIC)
+            res, _ = _engine()(crop)  # detection on: three numbers between team logos
+            nums = []
+            for n in re.findall(r"\d{1,5}", " ".join(r[1] for r in (res or []))):
+                if len(n) >= 2 and n not in nums:
+                    nums.append(n)
+            if len(nums) >= 3:
+                votes[a][tuple(int(n) for n in nums[:3])] += 1
+    return {a: list(v.most_common(1)[0][0]) if v else [] for a, v in votes.items()}
+
+
 def scan(path, t0, t1, step=1.0, out_path=None, progress=True):
     """Sample the scorebug every `step` seconds of video between t0 and t1.
 

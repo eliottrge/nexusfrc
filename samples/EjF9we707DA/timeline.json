@@ -6,8 +6,16 @@
  "field_length": 16.54,
  "field_width": 8.07,
  "teams": {
-  "blue": [],
-  "red": []
+  "blue": [
+   868,
+   2910,
+   2046
+  ],
+  "red": [
+   4065,
+   4414,
+   1323
+  ]
  },
  "auto_winner": "blue",
  "final_score": {

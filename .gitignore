@@ -2,3 +2,10 @@ __pycache__/
 *.egg-info/
 .pytest_cache/
 *.mp4
+.env
+
+# large or generated files
+models/*.onnx
+samples/_tba_cache/
+build/
+dist/

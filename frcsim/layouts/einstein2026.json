@@ -1,0 +1,15 @@
+{
+  "name": "2026 Championship webcast (Einstein), split screen",
+  "frame_size": [1920, 1080],
+  "blue_side": "left",
+  "field_region": [0, 255, 1920, 700],
+  "calibration": [
+    {"label": "Blue hub, front edge centre", "field": [4.03, 3.44], "image": [480, 455]},
+    {"label": "Red hub, front edge centre", "field": [12.51, 3.44], "image": [1456, 455]},
+    {"label": "Centre line, far wall", "field": [8.27, 8.07], "image": [964, 286]},
+    {"label": "Centre line, near wall", "field": [8.27, 0.0], "image": [968, 690]},
+    {"label": "Far wall, blue corner", "field": [0.0, 8.07], "image": [40, 295]},
+    {"label": "Far wall, red corner", "field": [16.54, 8.07], "image": [1880, 295]}
+  ],
+  "team_boxes": {"blue": [440, 132, 790, 162], "red": [1140, 132, 1480, 162]}
+}

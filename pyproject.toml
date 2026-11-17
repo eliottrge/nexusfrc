@@ -1,11 +1,24 @@
 [project]
 name = "frcsim"
-version = "0.1.0"
+version = "0.2.0"
+description = "nexusfrc: analyze FRC match videos (scorebug, balls, robot tracking, 2D replay, coaching)"
 requires-python = ">=3.11"
-dependencies = ["pydantic>=2", "fastapi", "uvicorn", "opencv-python-headless", "rapidocr-onnxruntime", "yt-dlp[default]"]
+dependencies = [
+  "pydantic>=2", "fastapi", "uvicorn", "numpy",
+  "opencv-python-headless", "onnxruntime", "rapidocr-onnxruntime",
+  "yt-dlp[default]",
+]
+
 [project.optional-dependencies]
-dev = ["pytest"]
+dev = ["pytest", "httpx"]
+# training a ball detector (tools/train_yolo.py) only; never needed to run the app
+train = ["ultralytics"]
+
+[project.scripts]
+nexusfrc = "frcsim.web:main"
+
 [tool.setuptools]
-packages = ["frcsim", "frcsim.ingest", "frcsim.ingest.video", "frcsim.rules"]
+packages = ["frcsim", "frcsim.ingest", "frcsim.ingest.video"]
+
 [tool.setuptools.package-data]
-frcsim = ["static/*"]
+frcsim = ["static/*", "layouts/*"]

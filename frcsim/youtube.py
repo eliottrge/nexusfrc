@@ -13,8 +13,7 @@ from pathlib import Path
 
 from . import pipeline
 
-# Every analysis lives in SAMPLES_DIR/<video id>/, wherever the program is started from.
-SAMPLES_DIR = Path(__file__).resolve().parents[1] / "samples"
+from .settings import DATA_DIR as SAMPLES_DIR  # every analysis lives in DATA_DIR/<video id>/
 
 # H.264 ("avc1") video-only, 1080p preferred. The pipeline cannot decode AV1, and VP9 is unreliable.
 FORMAT = "bv*[vcodec^=avc1][height<=1080][ext=mp4]/bv*[vcodec^=avc1][height<=1080]"

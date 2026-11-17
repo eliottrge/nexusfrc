@@ -60,7 +60,8 @@ def _detect(crop, subtractor):
 
 
 class _Tracker:
-    def __init__(self, region, mouth):
+    def __init__(self, region, mouth, max_step=MAX_STEP, lost_frames=LOST_FRAMES):
+        self.max_step, self.lost_frames = max_step, lost_frames
         x0, y0 = region[:2]
         self.mouth = (mouth[0] - x0, mouth[1] - y0, mouth[2] - x0, mouth[3] - y0)
         self.tracks = []   # dict: pts [(frame,x,y)], last, size
@@ -77,7 +78,7 @@ class _Tracker:
             _, lx, ly = tr["pts"][-1]
             for di, d in enumerate(dets):
                 dist = math.hypot(d[0] - lx, d[1] - ly)
-                if dist <= MAX_STEP:
+                if dist <= self.max_step:
                     pairs.append((dist, ti, di))
         used_t, used_d = set(), set()
         for _, ti, di in sorted(pairs):
@@ -94,7 +95,7 @@ class _Tracker:
                 self.tracks.append({"pts": [(frame_i, d[0], d[1])], "counts": [d[2]], "last": frame_i})
         alive = []
         for tr in self.tracks:
-            if frame_i - tr["last"] > LOST_FRAMES:
+            if frame_i - tr["last"] > self.lost_frames:
                 self._close(tr)
             else:
                 alive.append(tr)
